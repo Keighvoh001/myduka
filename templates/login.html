@@ -1,0 +1,55 @@
+{%extends "layout.html"%} {%block content%}
+
+
+<form action="/login" method="post">
+  <section>
+    <div class="leaves">
+      <div class="set">
+        <div><img src="/static/sub-static/leaf_01.png" /></div>
+        <div><img src="/static/sub-static/leaf_02.png" /></div>
+        <div><img src="/static/sub-static/leaf_03.png" /></div>
+        <div><img src="/static/sub-static/leaf_04.png" /></div>
+        <div><img src="/static/sub-static/leaf_01.png" /></div>
+        <div><img src="/static/sub-static/leaf_02.png" /></div>
+        <div><img src="/static/sub-static/leaf_03.png" /></div>
+        <div><img src="/static/sub-static/leaf_04.png" /></div>
+      </div>
+    </div>
+    <img src="/static/sub-static/bg.jpg" alt="pic" class="bg" />
+    <img src="/static/sub-static/girl.png" alt="girl" class="girl" />
+    <div class="login">
+      <h2>Login</h2>
+      
+      <div class="inputBox">
+        <label for="login" class="form-label">Email address</label>
+        <input
+          name="email"
+          type="text"
+          class="form-control"
+          placeholder="Enter email"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="inputBox">
+        <label for="password" class="form-label">Password</label>
+        <input
+          name="password"
+          type="password"
+          placeholder="Enter password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="inputBox">
+        <input type="submit" value="Login" id="btn" />
+      </div>
+      <div class="group">
+        <a href="#">Forget Password</a>
+        <a href="{{url_for('register')}}">Sign up</a>
+      </div>
+    </div>
+    <img src="/static/sub-static/trees.png" alt="trees" class="trees" />
+  </section>
+</form>
+{% endblock %}
