@@ -61,10 +61,7 @@ def delete_product_route(product_id):
     return redirect(url_for("products"))
     
 
-
-
-
-    
+  
 # creating a route for sales
 @app.route('/sales')
 def sales():
@@ -183,4 +180,4 @@ def logout():
 
 
 
-app.run(debug=True)
+# app.run(debug=True)

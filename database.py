@@ -3,7 +3,7 @@ import psycopg2
 conn=psycopg2.connect(
     dbname="myduka",
     user="postgres",
-    password="P@ssw0rd",
+    password="123456789",
     host= "localhost",
     port=5432
 )
@@ -24,7 +24,7 @@ def get_table(table):
 # inserting products part 1
 
 def insert_products(values):
-    insert= "insert into products(name,buying_price,selling_price,stock_quantity)values(%s,%s,%s,%s);"
+    insert= "insert into products(product_name,buying_price,selling_price,stock_quantity)values(%s,%s,%s,%s);"
     cur.execute(insert,values)
     conn.commit()
 
